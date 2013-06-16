@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><%= content_for?(:title) ? yield(:title) : "Ayuda Estudiantil" %></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<%= stylesheet_link_tag "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+	<%= yield(:head) %>
+</head>
+<body>
+    	<!--<h1>Ayuda Estudiantil </h1>
+    	<%= link_to "ACCEDER AL SISTEMA", new_session_path %>  -->
+    	<div class="container">
+    		<!-- Jumbotron -->
+    		<div class="jumbotron">
+    			<h1>¿Complicado en algún ramo?</h1>
+    			<p class="lead">Busca los trabajos y/o tareas que han subido tus compañeros de carrera, descargalos y manos a la obra!</p>
+    			<!-- <a class="btn btn-large btn-success" href="#">Regístrate</a> -->
+    		</div> <!-- Jumbotron -->
+
+    		<hr>
+
+    		<!-- Example row of columns -->
+    		<div class="row-fluid">
+    			<div class="span4">
+    				<h2>Sube tus trabajos</h2>
+    				<p>Podrás subir tus propias tareas, muestrale a tus compañeros lo que hiciste y por supuesto estarás ayudandole a alguien
+    					que lo necesite. </p>    
+    					<!-- , :height => "600", :width => "496"					 -->
+    					<p><%= image_tag("Upload.png", :alt => "Smiley face") %></p>
+                        <a href="/curso1/curso1">entrar</a>                    
+    				</div>
+    				<div class="span4">
+    					<h2>Zona de códigos</h2>
+    					<p>Podrás explorar la zona de códigos, donde podrás buscar un código en específico. </p>
+    					<!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+    					<p><%= image_tag("Computer-Code.jpg", :alt => "Smiley face") %></p>
+    				</div>
+    				<div class="span4">
+    					<h2>Interactúa y avanza!</h2>
+    					<p>Podrás comunicarte con los usuarios registrados, comentar sus publicaciones, hacerles preguntas y mejorar tu propio trabajo.</p>
+    					<!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+    					<p><%= image_tag("interaction.jpg", :alt => "Smiley face") %></p>
+    				</div>
+    			</div> <!-- Example row of columns -->
+
+    			<hr>
+
+    			<div class="footer">
+    				<p>&copy; Tec. Web 2013-1</p>
+    			</div>
+    		</div> <!-- /container -->
+
+    	</body>
+    	</html>

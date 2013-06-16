@@ -1,0 +1,31 @@
+<%= link_to "Ayuda Estudiantil", root_path, :class => 'brand' %>
+<ul class="nav">
+  <%# if user_signed_in? %>
+  <% idUser = session[:user_id]  %>
+  <% if idUser == nil %>
+  
+    <li>
+      <%= link_to('Login', new_session_path)  %>     
+    </li>
+    <li>
+      <%= link_to('Registrarse', new_identity_path)  %>
+    </li>
+
+  <% else %>  
+    
+    <% identity =  Identity.find(idUser) %>    
+    <% if  identity.administrator %>
+    <li>
+      <%= link_to('Usuarios',identities_path) %>
+    </li>    
+    <% else %>
+    <li>
+      <%= link_to('Editar Cuenta', edit_identity_path(identity, :method => 'put')) %>
+    </li>            
+    <% end %>
+     <li>
+      <%= link_to('Logout', signout_path, :method=>'delete') %>
+    </li>
+
+  <% end %>
+</ul>

@@ -1,0 +1,20 @@
+dantete-HP-425 ayuda_estudiantil_1 # rake routes
+   identities GET    /identities(.:format)              identities#index
+              POST   /identities(.:format)              identities#create
+ new_identity GET    /identities/new(.:format)          identities#new
+edit_identity GET    /identities/:id/edit(.:format)     identities#edit
+     identity GET    /identities/:id(.:format)          identities#show
+              PUT    /identities/:id(.:format)          identities#update
+              DELETE /identities/:id(.:format)          identities#destroy
+     sessions GET    /sessions(.:format)                sessions#index
+              POST   /sessions(.:format)                sessions#create
+  new_session GET    /sessions/new(.:format)            sessions#new
+ edit_session GET    /sessions/:id/edit(.:format)       sessions#edit
+      session GET    /sessions/:id(.:format)            sessions#show
+              PUT    /sessions/:id(.:format)            sessions#update
+              DELETE /sessions/:id(.:format)            sessions#destroy
+         root        /                                  home#index
+                     /auth/:provider/callback(.:format) sessions#create
+      signout        /signout(.:format)                 sessions#destroy
+ auth_failure        /auth/failure(.:format)            sessions#failure
+

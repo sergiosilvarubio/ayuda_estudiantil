@@ -1,0 +1,39 @@
+<h3>Editar usuario</h3>
+
+<%= form_for(@identity) do |identity_form| %>
+	<% if @identity && @identity.errors.any? %>
+		<div class="error_messages">
+			<h2><%= pluralize(@identity.errors.count, "errores") %> La cuenta no fue editada:</h2>
+			<ul>
+				<% @identity.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<div class="field">
+		<%= identity_form.label :name %>
+		<%= identity_form.text_field :name %>
+	</div>
+	<div class="field">
+		<%= identity_form.label :email %>
+		<%= identity_form.text_field :email %>
+	</div>
+
+	
+	<% if loggedIsAdministrator() %>
+		<div class="field">
+			<%= identity_form.label :administrator %>
+			<%= identity_form.check_box :administrator %>
+		</div>
+	<% end %>
+	
+	<br>
+	<div class="actions">
+		<%= identity_form.submit "Editar"%>
+		<%= identity_form.submit "Cancelar"%>
+	</div>
+<% end %>
+
+

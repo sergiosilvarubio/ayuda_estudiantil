@@ -1,0 +1,22 @@
+
+
+<p>
+  <strong>¿No tienes cuenta?</strong>
+  <%= link_to "!Crea tu cuenta ahora!", new_identity_path %> o logueate:
+</p>
+
+<%= form_tag "/auth/identity/callback" do %>
+
+
+<div class="field">
+  <%= label_tag :auth_key, "Email" %><br>
+  <%= text_field_tag :auth_key %>
+</div>
+<div class="field">
+  <%= label_tag :password %><br>
+  <%= password_field_tag :password %>
+</div>
+<div class="actions"><%= submit_tag "Login" %></div>
+<% end %>
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">Username</a>
+            </p>
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Semestres</li>
+              <li class="active"><a href="/curso1/curso1">1 Semestre</a></li>
+              <li><a href="/curso2/curso2">2 Semestre</a></li>
+              <li><a href="/curso3/curso3">3 Semestre</a></li>
+              <li><a href="/curso4/curso4">4 Semestre</a></li>
+              <li><a href="/curso5/curso5">5 Semestre</a></li>
+              <li><a href="/curso6/curso6">6 Semestre</a></li>
+              <li><a href="/curso7/curso7">7 Semestre</a></li>
+              <li><a href="/curso8/curso8">8 Semestre</a></li>
+              <li><a href="/curso9/curso9">9 Semestre</a></li>
+              <li><a href="/curso10/curso10">10 Semestre</a></li>
+              <li><a href="/curso11/curso11">11 Semestre</a></li>
+              <li><a href="/curso12/curso12">12 Semestre</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <p><%= image_tag("utalca.jpg", :alt => "Smiley face") %></p>
+          </div>
+          <div class="row-fluid">
+            <div class="span4">
+              <h4>Administración de sistemas computacionales</h4>
+              <p align="justify">La competencia más compleja que el estudiante desarrollará en el módulo es: Administrar elfuncionamiento de un sistema operativo que brinda servicios, analizando la  infraestructura que lo soporta, sus principales componentes y especícando su utilización a nivel local, de red o datos. El nivel de logro esperado por el estudiante es avanzada, considerando que ha desarrollado competencias intermedias de redes, sistemas operativos y manipulación de datos.</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h4>Taller de desarrollo de software</h4>
+              <p align="justify"> Este módulo contribuye en el área Formación Disciplinaria del Plan de Formación de Ingeniería Civil en Computación, al desarrollo de las competencias “Aplicar Ingeniería de Requisitos”, “Diseñar y Construir Sistemas de Software”, “Modelar y Manipular información” y “Administrar Proyectos Informáticos”, que se insertan dentro del dominio “Ingeniería de Software”. Además aporta al desarrollo de las competencias “Resolver problemas computacionales algorítmicamente”,“Diseñar y evaluar el desempeño de algoritmos y estructuras de datos” y en menor grado, dependiendo del proyecto que se aborda a la competencia “Diseñar, configurar y administrar sistemas computacionales y redes de computadores” insertas en el dominio “Ciencias de la Computación e Ingeniería”. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h4>Diseño de sistemas de comunicación de datos</h4>
+              <p align="justify"> A través de éste módulo, el estudiante aprenderá acerca del modelo OSI de la ISO. El alumno conocerá distintos métodos y estructuras que definen la confección de las primeras capas del modelo OSI. Además, el alumno experimentará con los conceptos vistos en clases a través de laboratorios. Los laboratorios serán una pieza fundamental en el aprendizaje puesto que el estudiante verá bajo redes reales cómo es que se aplican todos los temas tratados en el módulo. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h4>Diseño de análisis de algoritmos</h4>
+              <p align="justify"> En este módulo se estudia como resolver problemas computacionales desde el punto de vista de la técnica de diseño de la solución; a diferencia de módulos anteriores donde el estudio estaba basado en las distintas estructuras de datos a utilizar. Para esto se revisan varias técnicas de diseño de algoritmos tradicionales y no tradicionales. Este módulo sigue la misma línea algorítmica fundamental de los módulos algoritmos y Estructuras de Datos, Estructuras Computacionales Discretas y Modelos de Computabilidad. De esta forma se persigue consolidar el pensamiento algorítmico formal, una habilidad considerada clave dentro del dominio
+              Software y Manejo de Información, del área Formación Disciplinaria del Plan de Formación de Ingeniería Civil en Computación</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+      <hr>
+
+      <footer>
+        <p>&copy; Tec. Web 2013-1</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
